@@ -1,0 +1,63 @@
+
+<!DOCTYPE html><html class=''>
+<head><meta charset='UTF-8'>
+	<title></title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+	<!-- CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+	<!-- Local -->
+	<script type="text/javascript" src="script.js"></script>
+	<style type="text/css">
+    html {
+      height: 100%;
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    body {
+      position: relative;
+      margin: 0;
+      padding-bottom: 7rem; /*Has to be adjusted with rem according to footer*/
+      min-height: 100%;
+    }
+    .wrapper h1 {
+      margin-top: 0;
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 2rem;
+      background-color: gainsbro;
+      text-align: center;
+    } 
+  </style>
+</head>
+
+<body>
+<div class="wrapper">
+  <h1>Chris Bracco's CSS always-on-the-bottom-footer</h1>
+
+  <p>I often find myself designing a website where the footer must rest at the bottom of the page, even if the content above it is too short to push it to the bottom of the viewport naturally.</p>
+
+  <p>However, if the content is taller than the user’s viewport, then the footer should disappear from view as it would normally, resting at the bottom of the page (not fixed to the viewport).</p>
+
+  <p>If you know the height of the footer, then you should set it explicitly, and set the bottom padding of the footer’s parent element to be the same value (or larger if you want some spacing).</p>
+
+  <p>This is to prevent the footer from overlapping the content above it, since it is being removed from the document flow with <code>position: absolute;</code>.</p>
+
+  <hr>
+
+  <p>Consectetur reprehenderit enim sint magna ut id consectetur incididunt consequat eu amet pariatur est incididunt. Lorem ipsum occaecat aliquip cupidatat officia magna pariatur occaecat ea ad nostrud. Ut mollit reprehenderit in qui tempor eu sit commodo adipisicing non aliquip aliquip velit et ut. Ut cillum irure ea deserunt veniam minim eu dolor reprehenderit dolor ut excepteur aliqua esse.</p>
+
+  <p>Deserunt in nulla non dolore elit tempor sed consequat proident cupidatat aliquip est non labore sed dolor aliqua. Commodo veniam dolor irure non dolore sit exercitation in nisi aliquip. Reprehenderit excepteur sunt nostrud cillum mollit ut ad et proident mollit sint adipisicing dolor laboris adipisicing excepteur incididunt occaecat. Ex nulla sit do labore tempor deserunt excepteur sit cillum et pariatur officia adipisicing tempor ut esse ut et. Duis ea enim pariatur aliqua aliqua laborum consectetur aute. Ut veniam dolore in dolore exercitation in do ad amet enim irure. Aliquip tempor laborum aliquip voluptate ut veniam in aute reprehenderit et. Lorem ipsum sit in amet laborum deserunt quis tempor minim laborum aliquip eu aute exercitation. Sit occaecat adipisicing excepteur pariatur dolore exercitation ea ullamco ut excepteur dolor in dolore in dolor dolore.</p>
+
+  <p>Eu eiusmod qui non sunt ullamco dolore duis dolor labore nostrud nisi tempor. Lorem ipsum in aute irure sit commodo consequat reprehenderit dolor nostrud quis nostrud exercitation est laboris nostrud adipisicing nisi. Incididunt laboris esse mollit exercitation commodo consectetur excepteur proident qui irure. Veniam cillum occaecat labore irure aliquip officia dolore sint laborum consequat cillum minim dolore do veniam. Lorem ipsum culpa sed adipisicing deserunt occaecat reprehenderit culpa sunt in duis do elit elit proident proident id aliquip sed. Lorem ipsum irure tempor laboris in sit do sed nostrud anim aliquip esse occaecat ut elit nisi. Non non eiusmod irure est labore sunt nostrud mollit ullamco commodo. Do sint sed est fugiat sed duis incididunt ullamco cupidatat officia tempor ut voluptate. Ut incididunt veniam non consequat nulla elit deserunt eu adipisicing deserunt dolor incididunt excepteur esse amet nostrud. Tempor elit anim officia ea nulla labore anim id aute elit exercitation tempor deserunt duis reprehenderit tempor. Consequat esse ut ex tempor velit dolor proident ea. Lorem ipsum in in cupidatat quis laborum ex deserunt aute in tempor est mollit et. Lorem ipsum commodo elit minim est duis velit aute irure do laborum dolor proident in ex sint. Qui nisi aute do amet ad dolore ut sunt esse eiusmod veniam ex nisi dolore deserunt tempor eiusmod. Lorem ipsum amet labore ut esse occaecat magna aliquip et duis velit do non anim consequat culpa duis veniam. Culpa labore quis nisi incididunt esse sint aliquip velit non ea occaecat ea sunt commodo anim. Aliqua dolor incididunt consequat officia sunt ullamco nisi dolore pariatur est veniam ullamco non dolore qui. Lorem ipsum dolore ut ut ullamco aliqua dolor id fugiat qui. In minim veniam occaecat labore nostrud incididunt commodo voluptate. Magna est enim amet officia cupidatat est id id. Minim exercitation occaecat dolore excepteur eiusmod dolor velit in sunt non incididunt ex. Dolor fugiat in fugiat in reprehenderit sit consequat excepteur labore nulla labore id in laboris dolor labore elit esse. Lorem ipsum occaecat ut dolore reprehenderit anim sunt id ut elit labore anim laborum enim tempor sint eiusmod pariatur pariatur dolore. Reprehenderit qui minim anim sit occaecat proident amet do ad cillum veniam ullamco eu occaecat.</p>
+
+
+</div>
+
+<div class="footer">This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div>
+
+</body></html>
